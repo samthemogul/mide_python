@@ -24,7 +24,7 @@ def generate_response(tweet: str, bank_name: str = "Zenith") -> str:
     contents=(
       f"I am going to pass in a tweet on {bank_name} can you help me assess "
       f"the criticality of the attached tweet to customer service on a scale of "
-      f"(0-10), Tweet: {tweet}"
+      f"(0-100%), Tweet: {tweet}"
     ),
   )
   # SDK may provide .text or other representation; coerce to str as fallback
